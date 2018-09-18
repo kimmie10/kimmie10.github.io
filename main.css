@@ -1,0 +1,215 @@
+/* html, body {
+    height: 100%;
+    width: 100%;
+    padding-left: 90px;
+}
+
+#portfoliobg {
+    background-image: url(images/stone-wall-3447370_1280.jpg)
+}
+
+header {
+    border-right: solid lightsteelblue 2px;
+    border-left: solid lightsteelblue 2px;
+    height: 75px;
+    border-bottom: solid lightsteelblue 2px;
+    height: 75px;   
+}
+
+.bgImg {
+    height: 100vh;
+    width: 100%;
+    border-bottom: solid black 2px;
+    background: url(images/lakeburton3.jpg) no-repeat center;
+    background-size: cover;
+    -ms-flex-item-align: stretch;
+}
+
+#logo, h1 {
+    text-decoration-line: none;
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    font-size: 30px;
+    color: white;
+    background-color: rgb(107, 29, 29);
+    text-align: center;
+    padding: 4px;
+}
+
+#jobTitle {
+    font-size: medium;
+    font-style: oblique;
+}
+
+#sticky {
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    left: 0;
+    padding: 10px;
+    height: 100vh;
+}
+
+.nav-item{
+    margin-top: 10px;
+}
+
+.nav-link {
+    background-color: rgb(107, 29, 29);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-pills {
+    border-color: black;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    float: left;
+}
+
+.nav-link:visited {
+    color: lightgray;
+}
+
+.nav-link:hover {
+    color: red;
+}
+
+.nav-link:active {
+    background-color:lightgrey;
+}
+
+.navbar-toggler {
+    float: right;
+    background-color: white;
+}
+
+h2 {
+    color: rgb(107, 29, 29);
+    font-size: 30px;
+    padding-top: 20px;
+    font-weight: bold;
+    background-color: lightgrey;
+    padding: 10px;
+    text-align: center;
+}
+
+.container {
+    width: 1013px;
+    padding-left: 40px;
+    background-color: lightgrey;
+    margin-bottom: 20px;
+}
+
+footer { 
+    position: relative;
+    height: 50px;
+    clear: both;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(107, 29, 29);
+}
+
+p {
+    line-height: 2;
+}
+
+a {
+    color: white;
+}
+
+.text-block {
+    background-color: rgb(107, 29, 29);
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    margin-bottom: 2%;
+    text-align: center;
+    padding: 8px;
+    font-size: 1rem;
+}
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;    
+}
+
+.col {
+    padding: 5px;
+}
+
+.jubotron {
+    text-align: center;
+}
+
+#contact {
+    background-color: white;
+    padding: 50px;
+}
+
+ul {
+    text-align: center;
+}
+
+#email, #linkedIn, #github {
+    display: inline-block;
+    padding: 50px;
+}
+
+i {
+    font-size: 100px;
+    background: #e9ecef;
+    padding: 50px;
+    text-align: center;
+    display: inline;
+    border-radius: 50%;
+    border: 3px solid lightgray;
+    box-shadow: 0 0 0 10px rgba(255,255,255,.2),
+        0 0 0 20px rgba(255,255,255,.4),
+        0 0 0 30px rgba(255,255,255,.1);
+}
+
+i:hover {
+    animation: pulse 4s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    50% {
+        box-shadow: 0 0 0 40px rgba(255,255,255,.2),
+        0 0 0 55px rgba(255,255,255,.4),
+        0 0 0 80px rgba(133, 132, 132, 0.5);
+    }
+}
+
+.far, .fab{
+    color: gray;
+}
+
+.second {
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+    color: royalblue;
+
+}
+
+#follow {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: royalblue;
+    font-size: 30px;
+    padding-top: 20px;
+    background-color: lightgrey;
+    padding: 10px;
+    text-align: center;
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+    html, body {padding: 0}
+    nav{}
+}
+
+@media only screen and (max-width: 640px) {
+    html, body {padding: 0}
+
+} */
