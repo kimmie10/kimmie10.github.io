@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/kimmie10/portfolio#readme",
   "dependencies": {
-    "bulma": "^0.7.1"
+    "bulma": "^0.7.1",
+    "bulma-start": "0.0.2"
   }
 }

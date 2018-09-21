@@ -6,157 +6,138 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Kim Wood | Full Stack Developer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
         crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="reset.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
-
-
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
 </head>
 
-<body id="head">
-    <header class="bgImg">
-        <nav id="sticky" class="navbar-expand-lg navbar-light bg-light d-none d-md-block">
-            <h1>
-                <a class="nav nav-pills justify-content-start rounded-top" id="logo" a href="#head">Kim Wood</a>
-                <br>
-                <span id="jobTitle">Full Stack Developer</span>
-            </h1>
-            <br>
-                <ul class="nav nav-pills justify-content-center flex-column flex-sm-column">
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#about">About</a>
-                    </li>
-                    <br>
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#skills">Skills</a>
-                    </li>
-                    <br>
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#portfoliobg">Portfolio</a>
-                    </li>
-                    <br>
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#contact">Contact</a>
-                    </li>
-                </ul>
-        </nav>
-        <nav class="navbar fixed-top navbar-light bg-light d-md-none">
-            <h1>
-                <a class="nav nav-pills justify-content-start rounded-top" id="logo" a href="#head">Kim Wood </a>
-            </h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarToggler"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <h1><span id="jobTitle"> Full Stack Developer</span></h1>
-            <br>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="nav nav-pills justify-content-center flex-column flex-sm-column">
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#about">About</a>
-                    </li>
-                    <br>
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#skills">Skills</a>
-                    </li>
-                    <br>
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#portfoliobg">Portfolio</a>
-                    </li>
-                    <br>
-                    <li class="nav-item">
-                        <a class="nav-link flex-sm-fill text-sm-center" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-
-    <div class="jumbotron" id="about">
-        <h2 class="display-4">About</h2>
-        <p class="lead">My objective statement</p>
-        <hr class="my-4">
-        <p>
-
-        Full stack developer passionate about working at a company making a difference in the world. Effective problem solver and team collaborator. Exceptionally detail oriented with a penchant for finding simple and effective solutions.  Strong follow through and project completion skills.  Exceptional at making others feel at ease and working with team players who want to collaborate in making the best product possible. 
-        </p>
-        <h2 id="skills">Skills</h2>
-        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature
-            from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
-            Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through
-            the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
-            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in
-            45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-            Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk of Lorem
-            Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus
-            Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions
-            from the 1914 translation by H. Rackham.</p>
-    </div>
-
-    <div id="portfoliobg">
-        <h2>Portfolio</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm">
-                    <a href="../giphy-api/index.html" target="_blank">
-                        <img src="images/smokeythebear.gif" class="img-fluid" alt="National Parks gif" style="width: 300px; height: 300px;">
-                    </a>
-                    <div class="text-block">
-                        <a href="https://github.com/kimmie10/giphy-api" target="_blank">National Parks Giphy API</a>
+<body class="has-navbar-fixed-top" id="head">
+    <section class="hero is-info is-fullheight">
+        <div class="hero-head">
+            <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
+                <div class="container">
+                    <div class="navbar-brand">
+                        <a class="navbar-item" id="logo" href="#head">
+                            <aside class="menu">
+                                <p class="title is-1">Kim Wood</p>
+                                <p class="subtitle is-3" id="jobTitle">Full Stack Developer</p>
+                            </aside>
+                        </a>
+                        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                            <span aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="navbar-menu is-right">
+                        <div class="navbar-end">
+                            <span class="has-text-centered">
+                                <a href="#skills">Technical Skills</a>
+                            </span>
+                            <span class="has-text-centered">
+                                <a href="#portfoliobg">Portfolio</a>
+                            </span>
+                            <span class="has-text-centered">
+                                <a href="#contact">Contact</a>
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div class="col-sm">
-                    <a href="../train_activity/index.html" target="_blank">
-                        <img src="images/Train-Schedule-Board.jpg" class="img-fluid" alt="Train Schedule" style="width: 300px; height: 300px;">
-                    </a>
-                    <div class="text-block">
-                        <a href="https://github.com/kimmie10/train_activity" target="_blank">Moment.js and Firebase</a>
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <a href="../Project1/Project1fork/Project1/index.html" target="_blank">
-                        <img src="images/eventfinders.png" class="img-fluid" alt="Event Finders Application" style="width: 300px; height: 300px;">
-                    </a>
-                    <div class="text-block">
-                        <a href="https://github.com/kimmie10/Project1" target="_blank">Event Finders Website</a>
-                    </div>
-                </div>
-                <div class="w-100"></div>
-                <div class="col-sm">
-                    <img src="images/300x300.jpg" class="img-fluid" alt="Responsive image" ;>
-                    <div class="text-block">
-                        Holder4
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <img src="images/300x300.jpg" class="img-fluid" alt="Responsive image" ;>
-                    <div class="text-block">
-                        Holder5
-                    </div>
-                </div>
-                <div class="col-sm">
-                    <img src="images/300x300.jpg" class="img-fluid" alt="Responsive image" ;>
-                    <div class="text-block">
-                        Holder6
-                    </div>
-                </div>
-                <div class="w-100"></div>
-                <div class="col-sm">
-                    <img src="images/300x300.jpg" class="img-fluid" alt="Responsive image" ;>
-                    <div class="text-block">
-                        Holder7
-                    </div>
-                </div>
-                <div class="col-sm"></div>
-                <div class="col-sm"></div>
+            </nav>
+        </div>
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title">
+                    I'm a full stack developer passionate about working with companies that make a difference in
+                    the world.
+                    I can find
+                    simple and
+                    effective solutions for your project.
+                </h2>
             </div>
         </div>
-    </div>
+    </section>
+    <section class="section" id="skills">
+        <div class="container">
+            <h1 class="title has-text-centered">Technical Skills</h1>
+        </div>
+        <div class="container">
+            <div class="tile is-ancestor">
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="subtitle has-text-centered">HTML</p>
+                        <figure class="image is-128x128 center">
+                            <img src="images/html.png">
+                        </figure>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="subtitle has-text-centered">CSS</p>
+                        <figure class="image is-128x128 center">
+                            <img src="images/css.png">
+                        </figure>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="subtitle has-text-centered">JavaScript</p>
+                        <figure class="image is-128x128 center">
+                            <img src="images/js.png">
+                        </figure>
+                    </article>
+                </div>
+                <div class="tile is-parent">
+                    <article class="tile is-child box">
+                        <p class="subtitle has-text-centered">jQuery</p>
+                        <figure class="image is-128x128 center">
+                            <img src="images/jquery-mark-dark.gif">
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section" id="portfoliobg">
+        <div class="container">
+            <h1 class="title has-text-centered">Portfolio</h1>
+            <div class="container">
+                <div class="columns">
+                    <div class="column has-text-centered">
+                        <a href="../giphy-api/index.html" target="_blank">
+                            <img src="images/smokeythebear.gif" class="img-fluid" alt="National Parks gif" style="width: 300px; height: 300px;">
+                        </a>
+                        <a class="text-block" href="https://github.com/kimmie10/giphy-api" target="_blank">National
+                            Parks
+                            Giphy API</a>
+                    </div>
+                    <div class="column has-text-centered">
+                        <a href="../train_activity/index.html" target="_blank">
+                            <img src="images/Train-Schedule-Board.jpg" class="img-fluid" alt="Train Schedule" style="width: 300px; height: 300px;">
+                        </a>
+                        <a href="https://github.com/kimmie10/train_activity" target="_blank">Moment.js and Firebase</a>
+                    </div>
+                    <div class="column has-text-centered">
+                        <a href="../Project1/Project1fork/Project1/index.html" target="_blank">
+                            <img src="images/eventfinders.png" class="img-fluid" alt="Event Finders Application" style="width: 300px; height: 300px;">
+                        </a>
+                        <a href="https://github.com/kimmie10/Project1" target="_blank">Event Finders Website</a>
+                    </div>
+                    <div class="column has-text-centered">
+                        <img src="images/node (2).png" class="img-fluid" alt="Liri Bot" style="width: 300px; height: 300px;">
+                        <a href="https://github.com/kimmie10/liri-node-app.git" target="_blank">Liri Bot</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <section class="section" id="contact">
-        <h2 id="follow">Feel free to email or follow me...</h2>
+        <h1 class="title has-text-centered" id="follow">Feel free to email or follow me...</h1>
         <ul>
             <li id="email">
                 <a href="mailto:johnkim3188@gmail.com" class="email">
@@ -179,10 +160,14 @@
 
         </ul>
     </section>
-
-    <footer id="footer">Copyright@ Kim 2018</footer>
+    <footer id="footer">Copyright@ Kim 2018
+        <a id="bulmaLogo" href="https://bulma.io" target="_blank">
+            <img src="https://bulma.io/images/made-with-bulma--semiwhite.png" alt="Made with Bulma" width="128" height="24">
+        </a>
+    </footer>
     <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 
