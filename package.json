@@ -1,23 +1,22 @@
 {
-  "name": "portfolio-with-bulma",
+  "name": "kimmie10.github.io",
   "version": "1.0.0",
-  "description": "My latest up to date portfolio with linked projects, plus linkedin, github, and email in the contact area.",
+  "description": "Latest Version of portfolio with bulma",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kimmie10/portfolio.git"
+    "url": "git+https://github.com/kimmie10/kimmie10.github.io.git"
   },
-  "author": "",
+  "author": "Kim Wood",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kimmie10/portfolio/issues"
+    "url": "https://github.com/kimmie10/kimmie10.github.io/issues"
   },
-  "homepage": "https://github.com/kimmie10/portfolio#readme",
+  "homepage": "https://github.com/kimmie10/kimmie10.github.io#readme",
   "dependencies": {
-    "bulma": "^0.7.1",
-    "bulma-start": "0.0.2"
+    "bulma": "^0.7.2"
   }
 }

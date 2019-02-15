@@ -4,8 +4,17 @@ html, body {
     font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 
-.button {
-    background-color: rgb(107, 29, 29);
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
 }
 
 .hero.is-info {
@@ -21,25 +30,67 @@ html, body {
     padding-top: 5rem;
 }
 
-.has-text-centered{
-    padding: 20px;
+#skills {
+    background-color: #8a9a5b;
+}
+
+#portfoliobg {
+    background-color: snow;
+}
+
+#contact {
+     background-color:#8a9a5b;
 }
 
 .navbar {
     background: rgb(107, 29, 29)!important;
     height: 95px;
+    position: fixed;
+    width: 100%;
 }
 
 .navbar-end {
     padding: 20px;
 }
 
-#logo:hover { 
+/* @media screen and (min-width: 680px) {.navbar > .container .navbar-menu, .container > .navbar .navbar-menu {
+    margin-right: -1rem;
+}}
+
+@media screen and (min-width: 680px) {.navbar-menu {
+    flex-grow: 1;
+    flex-shrink: 0;
+}}
+
+@media screen and (min-width: 680px)
+{.navbar, .navbar-menu, .navbar-start, .navbar-end {
+    align-items: stretch;
+    display: flex;
+}}
+
+@media screen and (min-width: 680px)
+{.navbar-end {
+    justify-content: flex-end;
+    margin-left: auto;
+}}
+
+@media screen and (min-width: 680px)
+{.navbar, .navbar-menu, .navbar-start, .navbar-end {
+    align-items: stretch;
+    display: flex;
+}} */
+
+
+/* #logo:hover { 
     background-color: unset;
-}
+} */
 
 .title.is-1 {
     font-size: 2rem;
+}
+
+.title.has-text-centered {
+    color:rgb(107, 29, 29);
 }
 
 .subtitle.has-text-centered {
@@ -57,45 +108,85 @@ html, body {
     color: white;
 }
 
-#sticky {
-    position: fixed;
-    z-index: 1;
-    background-color: white;
-    left: 0;
-    padding: 10px;
-    height: 100vh;
-}
-
 h2 {
-    color: rgb(107, 29, 29);
-    font-size: 30px;
     padding-top: 20px;
-    font-weight: bold;
     padding: 10px;
     text-align: center;
 }
 
-footer { 
+.has-text-centered {
     position: relative;
-    height: 80px;
-    clear: both;
-    padding-top: 20px;
-    text-align: center;
-    color: white;
-    background-color: rgb(107, 29, 29);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    animation: fade 1s ease-in;
 }
 
-#bulmaLogo {
-    float: right;
+ .has-text-centered:hover .img-fluid {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.has-text-centered:hover .content:not(:last-child) {
+    opacity: 1.0;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .img-fluid {
     max-width: 100%;
-    height: auto;    
+    height: auto;
+    border-radius: 10%;
+    transition: transform 1s ease;
+    -webkit-transition: transform 1s ease;
+    -moz-transition: transform 1s ease;
+    -o-transition: transform 1s ease;
+    -ms-transition: transform 1s ease;
 }
 
-.col {
-    padding: 5px;
+.content {
+    background-color: rgba(107,29,29,1);
+    margin-bottom: 0%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+    -webkit-transition: opacity 0.8s ease;
+    -moz-transition: opacity 0.8s ease;
+    -o-transition: opacity 0.8s ease;
+    -ms-transition: opacity 0.8s ease;
+}
+
+#tech {
+    position: absolute;
+    top: 10%;
+    margin-left: 2em;
+}
+
+#links {
+    position: absolute;
+    top: 60%;
+    margin-left: 2em;
+}
+
+.tag.is.rounded {
+   display: inline-block;
+   margin-right: 90px;
+   margin-left: 2em;
+}
+
+.image.is-24x24 {
+    display: inline-block;
+    top: 10px;
+
 }
 
 ul {
@@ -107,18 +198,14 @@ ul {
     padding: 50px;
 }
 
-path {
-    box-sizing: content-box;
-}
-
 i {
     font-size: 100px;
-    background: #e9ecef;
+    background: #e7f0d3;
     padding: 50px;
     text-align: center;
     display: inline;
     border-radius: 50%;
-    border: 3px solid lightgray;
+    border: 3px solid #e7f0d3;
     box-shadow: 0 0 0 10px rgba(255,255,255,.2),
         0 0 0 20px rgba(255,255,255,.4),
         0 0 0 30px rgba(255,255,255,.1);
@@ -130,9 +217,9 @@ i:hover {
 
 @keyframes pulse {
     50% {
-        box-shadow: 0 0 0 40px rgba(255,255,255,.2),
-        0 0 0 55px rgba(255,255,255,.4),
-        0 0 0 80px rgba(133, 132, 132, 0.5);
+        box-shadow: 0 0 0 30px rgba(107,29,29,.3),
+        0 0 0 55px rgba(107,29,29,.2),
+        0 0 0 80px rgba(107,29,29,0.1);
     }
 }
 
@@ -153,16 +240,30 @@ i:hover {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bolder;
     font-size: x-large;
-    color: royalblue;
+    color: rgb(107, 29, 29);
 
 }
 
 @media (min-width: 641px) and (max-width: 768px) {
     html, body {padding: 0}
-    nav{}
+    
 }
 
 @media only screen and (max-width: 640px) {
     html, body {padding: 0}
+    nav{padding: 0}
+}
 
+footer { 
+    position: relative;
+    height: 80px;
+    clear: both;
+    padding-top: 20px;
+    text-align: center;
+    color: white;
+    background-color: rgb(107, 29, 29);
+}
+
+#bulmaLogo {
+    float: right;
 }

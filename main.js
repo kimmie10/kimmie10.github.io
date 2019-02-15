@@ -8,4 +8,19 @@ $(document).ready(function () {
         $(".navbar-menu").toggleClass("is-active");
 
     });
-});
+ $(".navbar-burger").headroom();
+ $(".navbar").headroom();
+
+    $(".navbar, .navbar-burger").headroom({
+        "offset": 150,
+        "tolerance": 3,
+        "classes": {
+            "initial": "animated",
+            "pinned": "slideDown",
+            "unpinned": "slideUp"
+        }
+    });
+
+    // to destroy
+    //  $("#header").headroom("destroy");
+ });
