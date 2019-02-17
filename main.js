@@ -8,6 +8,8 @@ $(document).ready(function () {
         $(".navbar-menu").toggleClass("is-active");
 
     });
+
+    // Headroom makes navbar animation
  $(".navbar-burger").headroom();
  $(".navbar").headroom();
 
@@ -21,6 +23,18 @@ $(document).ready(function () {
         }
     });
 
-    // to destroy
-    //  $("#header").headroom("destroy");
+    let title = "I'm a full stack developer passionate about working with companies that make a difference in the world. I can find simple and effective solutions for your project.";
+
+
+     let spans = '<span>' + title.split('').join('</span><span>') + '</span>';
+    $(spans).hide().appendTo('h2.title').each(function (i) {
+        $(this).delay(30 * i).css({
+            display: 'inline',
+            opacity: 0
+        }).animate({
+            opacity: 1
+        }, 100);
+    });
  });
+
+ 
