@@ -35,6 +35,26 @@ $(document).ready(function () {
             opacity: 1
         }, 100);
     });
+
+    // $("#arrow").click(function() {
+    //     $("#contact").animate({width: "toggle"},"slow");
+    //     $(this).hide();
+    // });
+
+    // let arrow = $("#arrow").clone(true);
+    // $("#arrow").click(function() {
+    //     arrow.prependTo(".hidden");
+    //     arrow.css({"float": "left", "margin-top": "100px"})
+    // })
+
+    // $("#arrow").click(function toggleArrow() {
+    //     let hideShow = $("#arrow");
+    //     if (hideShow.style.display === "none") {
+    //         hideShow.style.display = "block";
+    //     } else {
+    //         hideShow.style.display = "none";
+    //     }
+    // });
  });
 
  
